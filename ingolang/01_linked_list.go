@@ -18,6 +18,7 @@ func (l *List) Print() {
 
 	for head != nil {
 		fmt.Print(head.Value, ", ")
+		head = head.Next
 	}
 
 	fmt.Print("]")
